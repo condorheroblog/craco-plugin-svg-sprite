@@ -1,5 +1,7 @@
 # CHANGELOG
 
-## v1.0.0 (2020-12-18 12:46:41)
+## v1.0.0 (2020-12-18 16:02:45)
 
-Initial project
+publish time 2020-12-18
+
+## Initial project
