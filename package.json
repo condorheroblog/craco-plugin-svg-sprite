@@ -1,0 +1,50 @@
+{
+  "name": "craco-plugin-svg-sprite",
+  "version": "1.0.0",
+  "description": "craco-plugin for creating SVG sprites.",
+  "main": "src/index.js",
+  "scripts": {
+    "format": "prettier --write 'src/**/*.{js,scss,css}'",
+    "lint": "eslint ./src/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/condorheroblog/craco-plugin-svg-sprite.git"
+  },
+  "keywords": [
+    "svgo",
+    "svgo-loader",
+    "svg-sprite-loader",
+    "craco-plugin-svg-sprite"
+  ],
+  "author": "Condor Hero",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/condorheroblog/craco-plugin-svg-sprite/issues"
+  },
+  "homepage": "https://github.com/condorheroblog/craco-plugin-svg-sprite#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write",
+      "eslint -c .eslintrc"
+    ],
+    "*.ts": [
+      "prettier --parser=typescript --write",
+      "eslint -c .eslintrc"
+    ]
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.15.0",
+    "eslint-config-prettier": "^7.0.0",
+    "eslint-plugin-prettier": "^3.3.0",
+    "husky": "^4.3.6",
+    "lint-staged": "^10.5.3",
+    "prettier": "^2.2.1"
+  }
+}
